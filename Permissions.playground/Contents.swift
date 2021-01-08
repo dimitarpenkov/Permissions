@@ -10,12 +10,12 @@ struct PermissionsOptions: OptionSet {
     static let adSocialMedia = PermissionsOptions(rawValue: 1 << 3)
 }
 
-let permissionOptions = PermissionsOptions(rawValue: 15)
+let permissionsOptions = PermissionsOptions(rawValue: 15)
 
-let marketingEmailsEnabled = permissionOptions.contains(.marketingEmails)
-let marketingSmsEnabled = permissionOptions.contains(.marketingSms)
-let marketingPushEnabled = permissionOptions.contains(.marketingPush)
-let adSocialMediaEnabled = permissionOptions.contains(.adSocialMedia)
+let marketingEmailsEnabled = permissionsOptions.contains(.marketingEmails)
+let marketingSmsEnabled = permissionsOptions.contains(.marketingSms)
+let marketingPushEnabled = permissionsOptions.contains(.marketingPush)
+let adSocialMediaEnabled = permissionsOptions.contains(.adSocialMedia)
 
 print(marketingEmailsEnabled, marketingSmsEnabled, marketingPushEnabled, adSocialMediaEnabled)
 
